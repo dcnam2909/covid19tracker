@@ -1,0 +1,50 @@
+.card {
+    display: flex;
+    justify-content: space-around;
+}
+
+
+.card__status {
+    width: 200px;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 10px 17px rgba(0, 0, 0, 0.6);
+    margin: 5px;
+}
+
+.card__status>h3 {
+    padding: 5px 0;
+}
+
+.card__status--recovered {
+    border-bottom: solid 10px green;
+}
+
+.card__status--confrimed {
+    border-bottom: solid 10px yellow;
+}
+
+.card__status--deaths {
+    border-bottom: solid 10px red;
+}
+
+.card__today {
+    font-size: 15px;
+    color: gray;
+    line-height: 25px;
+}
+
+.card__today>strong {
+    color: black;
+    font-size: 20px;
+}
+
+.card__total {
+    font-size: 15px;
+    color: gray;
+}
+
+.card__total>strong {
+    color: black;
+    font-size: 18px;
+}

@@ -1,0 +1,7 @@
+.left-side {
+    flex: 0.6;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
