@@ -1,5 +1,6 @@
 .card {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
 }
 
@@ -10,6 +11,7 @@
     border-radius: 5px;
     box-shadow: 0 10px 17px rgba(0, 0, 0, 0.6);
     margin: 5px;
+    background-color: white;
 }
 
 .card__status>h3 {

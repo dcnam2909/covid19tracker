@@ -1,4 +1,3 @@
-import react from 'react';
 import LeftSide from "./components/LeftSide/LeftSide";
 import RightSide from "./components/RightSide/RightSide";
 import './App.css'

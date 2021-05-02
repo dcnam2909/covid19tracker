@@ -1,4 +1,11 @@
 .right-side {
     flex: 0.4;
-    border: solid 1px blue;
+    border: solid 2px gray;
+    margin: 20px;
+    border-radius: 5px;
+}
+
+.list__country {
+    height: 800px;
+    overflow: scroll;
 }

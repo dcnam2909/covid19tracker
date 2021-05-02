@@ -1,0 +1,41 @@
+.country {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 15px 40px;
+    border: 1px solid gray;
+    padding: 15px;
+    line-height: 30px;
+    background-color: #f1f1f1f1;
+    border-radius: 5px;
+}
+
+.country__info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.country__status {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.country__info--logo {
+    height: 50px;
+}
+
+.country__status--confirmed {
+    color: orange;
+}
+
+.country__status--recovered {
+    color: green;
+}
+
+.country__status--deaths {
+    color: red;
+}

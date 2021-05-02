@@ -9,6 +9,13 @@ const covidSlice = createSlice({
             recovered: 0,
             deaths: 0,
         },
+        infoByDate: {
+            numbDate: 0,
+            date: [],
+            confirmed: [],
+            recovered: [],
+            deaths: [],
+        },
         total: {
             confirmed: 0,
             recovered: 0,
@@ -16,6 +23,10 @@ const covidSlice = createSlice({
         },
         date: null,
         country: 'all',
+        listCountry: {
+            options: 'case',
+            country: [],
+        },
     },
     reducers: {
         changeInfo(state, action) {
@@ -36,9 +47,40 @@ const covidSlice = createSlice({
                 country: action.payload.country,
             }
         },
+        getInfoByDate(state, action) {
+            return {
+                ...state,
+                infoByDate: {
+                    ...state.infoByDate,
+                    numbDate: action.payload.numbDate,
+                    date: action.payload.date,
+                    confirmed: action.payload.confirmed,
+                    recovered: action.payload.recovered,
+                    deaths: action.payload.deaths,
+                }
+            }
+        },
+        changeListCountry(state, action) {
+            return {
+                ...state,
+                listCountry: {
+                    ...state.listCountry,
+                    country: [action.payload.country],
+                },
+            }
+        },
+        changeOption(state, action) {
+            return {
+                ...state,
+                listCountry: {
+                    ...state.listCountry,
+                    options: action.payload.option,
+                },
+            }
+        }
     }
 })
 
 const { actions, reducer } = covidSlice;
-export const { changeInfo } = actions;
+export const { changeInfo, getInfoByDate, changeListCountry, changeOption } = actions;
 export default reducer;

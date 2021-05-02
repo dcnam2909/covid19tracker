@@ -5,3 +5,10 @@
     display: flex;
     justify-content: center;
 }
+
+
+@media only screen and (max-width: 1024px) {
+    .chart {
+        width: 700px;
+    }
+}
