@@ -44,5 +44,3 @@ export default function RightSide() {
     )
 }
 
-
-// https://disease.sh/v3/covid-19/countries?sort=cases  deaths  recovered
